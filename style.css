@@ -1,0 +1,168 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'HKConcentrate-Bold';
+  src:url(assets/fonts/HKConcentrate-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'HKConcentrate-Medium';
+  src:url(assets/fonts/HKConcentrate-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'HKConcentrate-Regular';
+  src:url(assets/fonts/HKConcentrate-Regular.ttf);
+}
+
+h1{
+  font-family: 'HKConcentrate-Bold','Helvetica';
+  font-size: 3.5rem;
+}
+h3{
+  font-family: 'HKConcentrate-Medium','Helvetica';
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+p{
+  font-family: 'HKConcentrate-Regular','Helvetica';
+  font-size: 15px;
+  color:#828282;
+}
+body{
+  background-color: white;
+}
+
+.grid-product{
+  display: grid;
+  grid-template-columns:375px;
+  grid-template-areas:
+  'menu'
+  'product-photo'
+  'product-description'
+  'buttons';
+}
+
+.grid_product-details{
+  display: grid;
+  grid-template-columns:375px;
+  grid-template-areas:
+  'menu'
+  'product-photo'
+  'sliders'
+  'product-description'
+  'product-details'
+  'buttons';
+}
+
+.grid-questionaire{
+  display: grid;
+  grid-template-columns:375px;
+  grid-template-areas:
+  'menu'
+  'thumbnail_photo'
+  'product-title'
+  'progress-bar'
+  'questions'
+  'buttons';
+}
+
+
+.menu{
+  grid-area:menu;
+}
+
+.menu img{
+  width:53px;
+  height: 53px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.product-photo{
+  grid-area:product-photo;
+  align-self: center;
+  justify-self:center;
+}
+
+.product-photo img{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width:580px;
+  height: 250px;
+
+}
+.product-description{
+  grid-area:product-description;
+  justify-self:center;
+}
+
+
+.buttons{
+  grid-area:buttons;
+  justify-self:center;
+}
+
+.buttons img{
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width:80px;
+  height: 80px;
+}
+
+.back{
+  grid-area:back;
+}
+.sliders{
+  grid-area:sliders;
+}
+.product-details{
+  grid-area:product-details;
+  justify-self:center;
+  padding-top: 20px;
+  padding-right: 30px;
+}
+
+.seta{
+  width:32px;
+  height:32px;
+}
+
+.thumbnail_photo{
+  grid-area:thumbnail_photo;
+  justify-self:center;
+}
+
+.thumbnail_photo img{
+  width:200px;
+  height: 98px;
+  justify-self:center;
+
+}
+
+.product-title{
+  grid-area:product-title;
+  padding-top: 20px;
+  justify-self:center;
+}
+
+.progress-bar{
+  padding-top: 20px;
+  grid-area:progress-bar;
+  justify-self:center;
+
+}
+
+.progress-bar img{
+  width: 450px;
+}
+.questions{
+  grid-area:questions;
+  padding-top: 40px;
+  padding-left: 20px;
+}
